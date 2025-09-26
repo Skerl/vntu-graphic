@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ЗВІРІ ЛІСІВ ВІННИЧИНИ — Головна</title>
+    <meta name="description" content="Загальна інформація про ліси Вінниччини та їх роль у природі">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="ЗВІРІ ЛІСІВ ВІННИЧИНИ" class="logo-image">
+          <span class="logo-text">ЗВІРІ ЛІСІВ ВІННИЧИНИ</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html" aria-current="page">Головна</a>
+          <a href="conservation.html">Охорона природи</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="parks.html">Парки</a>
+          <a href="about.html">Про нас</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main class="container page">
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Ліси Вінниччини</h1>
+          <p>
+            Ліси Вінницької області — важлива частина природного середовища Поділля.
+            Вони виконують водоохоронну, ґрунтозахисну та кліматорегулюючу функції,
+            забезпечують оселища для численних видів рослин і тварин.
+          </p>
+        </div>
+        <div class="hero-media">
+          <img src="img/forest.gif" alt="Лісовий пейзаж Вінниччини" class="hero-image">
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="info-card">
+          <h2>Площа та розташування</h2>
+          <p>
+            Лісистість регіону становить приблизно 13–15%. Лісові масиви зосереджені
+            переважно у північній та центральній частинах області, уздовж річкових долин
+            та в межах природних ландшафтних районів Подільської височини.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h2>Типи лісів</h2>
+          <p>
+            Переважають мішані та листяні ліси: дубові, грабово-дубові, соснові насадження.
+            Також трапляються вільхові заплавні ліси та лісосмуги, створені для захисту ґрунтів.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h2>Рослинність</h2>
+          <p>
+            Типові породи: дуб звичайний, граб, сосна звичайна, береза, вільха. Підлісок
+            представлений ліщиною, кленом, черемхою. Трав'яний покрив багатий на анемону,
+            конвалію, копитняк та інші лісові види.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h2>Роль у природі</h2>
+          <p>
+            Ліси підтримують біорізноманіття, очищують повітря, регулюють стік води,
+            слугують місцем проживання та міграційними коридорами для тварин. Вони також
+            мають рекреаційне та освітнє значення для жителів області.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 ЗВІРІ ЛІСІВ ВІННИЧИНИ</p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    </script>
+  </body>
+  </html>
+
+

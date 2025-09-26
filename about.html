@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ЗВІРІ ЛІСІВ ВІННИЧИНИ — Про нас</title>
+    <meta name="description" content="Інформація про автора сайту та контакти">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="ЗВІРІ ЛІСІВ ВІННИЧИНИ" class="logo-image">
+          <span class="logo-text">ЗВІРІ ЛІСІВ ВІННИЧИНИ</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Головна</a>
+          <a href="conservation.html">Охорона природи</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="parks.html">Парки</a>
+          <a href="about.html" aria-current="page">Про нас</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main class="container page">
+      <h1>Про нас</h1>
+
+      <section class="about-content">
+        <h2>Мета</h2>
+        <p>
+          Поширювати знання про біорізноманіття, підтримувати відповідальне ставлення
+          до природи та заохочувати участь у збереженні тварин і їхніх середовищ існування.
+        </p>
+        
+        <h2>Важливість збереження лісу</h2>
+        <p>
+          Ліси Вінниччини є невід'ємною частиною екосистеми регіону та відіграють критично важливу роль 
+          у підтримці екологічного балансу. Вони забезпечують життєво необхідні функції для всього живого:
+        </p>
+        
+        <ul class="styled-list">
+          <li><strong>Водоохоронна функція:</strong> Ліси регулюють водний режим, запобігають повеням та засухам, очищають воду</li>
+          <li><strong>Кліматорегулююча роль:</strong> Поглинають вуглекислий газ, виробляють кисень, знижують температуру повітря</li>
+          <li><strong>Захист ґрунтів:</strong> Запобігають ерозії, зміцнюють ґрунт кореневою системою</li>
+          <li><strong>Біорізноманіття:</strong> Надають притулок тисячам видів рослин, тварин, грибів та мікроорганізмів</li>
+          <li><strong>Рекреаційна цінність:</strong> Забезпечують місця для відпочинку та оздоровлення людей</li>
+        </ul>
+        
+        <p>
+          Збереження лісів Вінниччини — це не просто захист природи, а інвестиція в майбутнє наступних поколінь. 
+          Кожен з нас може внести свій внесок у цю справу через свідоме ставлення до природи, підтримку екологічних 
+          ініціатив та поширення знань про важливість лісових екосистем.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 ЗВІРІ ЛІСІВ ВІННИЧИНИ</p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    </script>
+  </body>
+  </html>
+
+

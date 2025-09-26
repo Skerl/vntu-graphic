@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ЗВІРІ ЛІСІВ ВІННИЧИНИ — Парки Вінниччини</title>
+    <meta name="description" content="Природно-заповідні парки Вінницької області: описи та фото">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="ЗВІРІ ЛІСІВ ВІННИЧИНИ" class="logo-image">
+          <span class="logo-text">ЗВІРІ ЛІСІВ ВІННИЧИНИ</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Головна</a>
+          <a href="conservation.html">Охорона природи</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="parks.html" aria-current="page">Парки</a>
+          <a href="about.html">Про нас</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main class="container page">
+      <h1>Парки Вінниччини</h1>
+      <p>Добірка важливих природоохоронних територій області з короткими описами.</p>
+
+      <section class="content-stack">
+        <article class="info-card">
+          <h2>Національний природний парк «Кармелюкове Поділля»</h2>
+          <img class="media" src="img/Кармелюкове_Поділля.jpg" alt="Національний природний парк Кармелюкове Поділля" loading="lazy">
+          <p>
+            Створений у 2009 році, площа понад 20 тис. га. Це унікальна частина Подільської
+            височини з лісами, балками, річками та скелями. Тут ростуть підсніжник складчастий,
+            ковила, сон-трава. Тваринний світ представлений оленем, козулею, кабаном, борсуком,
+            а також чорним лелекою та совами.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h2>Регіональний ландшафтний парк «Дністер»</h2>
+          <img class="media" src="img/РЛП_Дністер.jpg" alt="Регіональний ландшафтний парк Дністер" loading="lazy">
+          <p>
+            Розташований у долині річки Дністер, площа понад 9 тис. га. Відомий каньйонами,
+            скелями, заплавами. Тут понад 900 видів рослин (ковила, тюльпан дібровний),
+            орлан-білохвіст, видра, чорний лелека. Популярний серед туристів.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h2>Регіональний ландшафтний парк «Немирівське Побужжя»</h2>
+          <img class="media" src="img/РЛП_Немирівське_Побужжя.jpg" alt="Регіональний ландшафтний парк Немирівське Побужжя" loading="lazy">
+          <p>
+            Площа близько 7 тис. га. Охоплює скелясті береги Південного Бугу, ліси та луки.
+            Є понад 600 видів рослин (сон-трава, тюльпан дібровний), тварини – видра, козуля,
+            журавель сірий, орел-карлик. Важливе місце для птахів.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h2>Регіональний ландшафтний парк «Середнє Побужжя»</h2>
+          <img class="media" src="img/РЛП_Середнє_Побужжя.jpg" alt="Регіональний ландшафтний парк Середнє Побужжя" loading="lazy">
+          <p>
+            Площа близько 10 тис. га. Характеризується мальовничими скелями та порогами
+            Південного Бугу. Тут понад 800 видів рослин (ковила, шавлія, гвоздика низька),
+            живуть кабани, козулі, орлан-білохвіст, стерлядь. Важливий центр туризму й охорони природи.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h2>Регіональний ландшафтний парк «Мурафа»</h2>
+          <img class="media" src="img/РЛП_Мурафа.jpg" alt="Регіональний ландшафтний парк Мурафа" loading="lazy">
+          <p>
+            Розташований у долині річки Мурафа, площа близько 6 тис. га. Поєднує ліси, степові
+            ділянки, луки. Рослинність – понад 500 видів (ковила, півонія втішна). Фауна – лисиця,
+            борсук, дикий кіт, сова, нетопир. Має туристичне та наукове значення.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 ЗВІРІ ЛІСІВ ВІННИЧИНИ</p>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    </script>
+  </body>
+  </html>
+
+
