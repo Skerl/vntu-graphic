@@ -198,6 +198,18 @@ body {
   margin: 10px 0 12px;
   object-fit: cover;
 }
+.info-card .media-small {
+  width: 20%;
+  max-width: 100px;
+  float: right;
+  margin: 0 0 0 12px;
+  border-radius: 8px;
+}
+.info-card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .styled-list { margin: 0; padding-left: 18px; color: var(--muted); }
 .styled-list li { margin: 6px 0; }
 .info-card:hover { transform: translateY(-3px); box-shadow: 0 8px 22px #0f172a1a; }
